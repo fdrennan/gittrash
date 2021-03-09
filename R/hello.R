@@ -13,7 +13,10 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-gittrash <- function() {
+#' gittrash
+#' @param env_name
+#' @export gittrash
+gittrash <- function(env_name = "POSTGRES_PASSWORD") {
   print("Hello, world!")
-  print(Sys.getenv("POSTGRES_PASSWORD"))
+  print(Sys.getenv(env_name))
 }

@@ -18,5 +18,6 @@
 #' @export gittrash
 gittrash <- function(env_name = "POSTGRES_PASSWORD") {
   print("Hello, world!")
+  print("Hello, Michael!")
   print(Sys.getenv(env_name))
 }
